@@ -2,11 +2,11 @@ require 'socket'
 
 module BlinkyCloud
   class Base
+    MULTICAST_ADDR = "224.0.0.1"
+    PORT = 54321
 
     def socket
       @socket ||= UDPSocket.open
-      @socket.setsockopt(:IPPROTO_IP, :IP_MULTICAST_TTL, 1)
-      @socket
     end
 
   end

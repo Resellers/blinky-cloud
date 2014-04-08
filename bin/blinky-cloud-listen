@@ -1,18 +1,9 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 require 'bundler/setup'
-require "socket"
-require "ipaddr"
+require 'blinky_cloud/listener'
 require 'blinky_tape_test_status'
 
-class DoStuff
-  def write!(data)
-    puts data
-  end
-end
-
-do_stuff = DoStuff.new
-
+blinky = BlinkyTapeTestStatus::Base.new
 listener = BlinkyCloud::Listener.new
-listener.listen(do_stuff, 'write!')
-
+listener.listen(lambda {|data| blinky.write! data})
