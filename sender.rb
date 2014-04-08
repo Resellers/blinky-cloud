@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require "socket"
 
 MULTICAST_ADDR = "224.0.0.1"
