@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    blinky-cloud (1.0.0)
+      blinky-tape-test-status
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -9,4 +15,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  blinky-tape-test-status
+  blinky-cloud!

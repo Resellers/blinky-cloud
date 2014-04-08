@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'bundler/setup'
+require "socket"
+require "ipaddr"
+require 'blinky_tape_test_status'
+
+class DoStuff
+  def write!(data)
+    puts data
+  end
+end
+
+do_stuff = DoStuff.new
+
+listener = BlinkyCloud::Listener.new
+listener.listen(do_stuff, 'write!')
+
