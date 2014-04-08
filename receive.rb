@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
+require 'rubygems'
+require 'bundler/setup'
 require "socket"
 require "ipaddr"
-require 'blinky-tape-test-status'
+require 'blinky_tape_test_status'
 
 MULTICAST_ADDR = "224.0.0.1"
 BIND_ADDR = "0.0.0.0"
@@ -15,7 +17,7 @@ socket.setsockopt(:SOL_SOCKET, :SO_REUSEPORT, 1)
 
 socket.bind(BIND_ADDR, PORT)
 
-blinky = BlinkyTapeTestStatus.new :tty => '/dev/tty.usbmodemfd121'
+blinky = BlinkyTapeTestStatus::Base.new :tty => '/dev/tty.usbmodemfd121'
 
 
 loop do
