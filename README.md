@@ -32,18 +32,18 @@ Talking to Blinky Tape
 
 Flashing Green:
 
-    `blinky-cloud-broadcast fg`
+`blinky-cloud-broadcast fg`
 
 Pulsing Blue:
 
-    `blinky-cloud-broadcast pb`
+`blinky-cloud-broadcast pb`
 
 Solid White:
 
-    `blinky-cloud-broadcast sw`
+`blinky-cloud-broadcast sw`
 
 Set Brightness to 50%:
 
-    `blinky-cloud-broadcast 5`
+`blinky-cloud-broadcast 5`
 
 For more commands, see the [blinky tape test status README](https://github.com/integrum/blinky-tape-test-status)
