@@ -1,0 +1,3 @@
+#!/bin/sh
+
+blinky-cloud-broadcast fb
