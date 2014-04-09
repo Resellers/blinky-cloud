@@ -15,7 +15,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency "blinky-tape-test-status"
-  s.add_runtime_dependency 'celluloid-io'
 
   s.homepage    =
     'http://rubygems.org/gems/blinky-cloud'
