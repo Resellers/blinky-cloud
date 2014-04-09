@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    blinky-cloud (1.1.1)
+    blinky-cloud (1.1.2)
       blinky-tape-test-status
 
 GEM

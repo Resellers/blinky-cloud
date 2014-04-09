@@ -1,3 +1,5 @@
+require 'blinky_cloud/base'
+
 module BlinkyCloud
   class Broadcaster < BlinkyCloud::Base
     def broadcast!(data)
