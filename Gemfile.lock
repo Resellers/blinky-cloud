@@ -1,18 +1,19 @@
 PATH
   remote: .
   specs:
-    blinky-cloud (1.1.2)
+    blinky-cloud (1.1.3)
       blinky-tape-test-status
 
 GEM
   remote: https://rubygems.org/
   specs:
-    blinky-tape-test-status (1.1.0)
+    blinky-tape-test-status (1.1.2)
       serialport
     serialport (1.3.0)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   blinky-cloud!
