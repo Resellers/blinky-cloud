@@ -2,7 +2,7 @@ require 'socket'
 
 module BlinkyCloud
   class Base
-    MULTICAST_ADDR = "224.0.0.1"
+    MULTICAST_ADDR = "224.1.1.1"
     PORT = 54321
 
     def socket
